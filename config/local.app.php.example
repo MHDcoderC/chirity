@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * کپی کنید به local.app.php و مقادیر هاست cPanel را تنظیم کنید.
+ */
+return [
+    /** آدرس نصب: '' برای روت دامنه، '/kh' برای زیرپوشه */
+    'app_url' => '',
+
+    /** production روی هاست | local روی XAMPP */
+    'env' => 'production',
+
+    /** ریدایرکت خودکار به HTTPS (روی هاست فعال بماند) */
+    'force_https' => true,
+];

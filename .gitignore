@@ -1,0 +1,14 @@
+config/local.php
+config/local.app.php
+config/installed.lock
+
+uploads/posts/*
+!uploads/posts/.gitkeep
+uploads/members/*
+!uploads/members/.gitkeep
+uploads/jehadi/*
+!uploads/jehadi/.gitkeep
+
+tools/patch-*.php
+tools/enc-*.php
+tools/fix-file.php

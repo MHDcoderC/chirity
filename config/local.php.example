@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * کپی کنید به local.php — اطلاعات دیتابیس cPanel
+ * نام دیتابیس و کاربر معمولاً با پیشوند cPanel است: cpuser_dbname
+ */
+return [
+    'host' => 'localhost',
+    'port' => '3306',
+    'name' => 'cpuser_namazi',
+    'user' => 'cpuser_dbuser',
+    'pass' => 'YOUR_DB_PASSWORD',
+];

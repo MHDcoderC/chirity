@@ -1,0 +1,28 @@
+                            <div class="col-md-6">
+                                <label class="form-label">پورت</label>
+                                <input type="text" name="db_port" class="form-control install-input" dir="ltr"
+                                       value="<?= $h($_POST['db_port'] ?? '3306') ?>" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">نام دیتابیس</label>
+                                <input type="text" name="db_name" class="form-control install-input" dir="ltr"
+                                       value="<?= $h($_POST['db_name'] ?? 'namazi') ?>" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">کاربر MySQL</label>
+                                <input type="text" name="db_user" class="form-control install-input" dir="ltr"
+                                       value="<?= $h($_POST['db_user'] ?? (kh_env() === 'local' ? 'root' : '')) ?>" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">رمز MySQL</label>
+                                <input type="password" name="db_pass" class="form-control install-input" dir="ltr">
+                            </div>
+
+                        <?php if (kh_env() === 'local'): ?>
+                        <div class="form-check mb-4 install-terms-check">
+                            <input class="form-check-input" type="checkbox" name="create_database" value="1" id="createDb"
+                                <?= !isset($_POST['action']) || !empty($_POST['create_database']) ? 'checked' : '' ?>>
+                            <label class="form-check-label" for="createDb">ساخت خودکار دیتابیس (فقط XAMPP/لوکال)</label>
+                        </div>
+                        <?php endif; ?>
+
