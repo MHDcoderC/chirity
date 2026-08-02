@@ -1,4 +1,4 @@
--- به‌روزرسانی ساختار — اجرای خودکار از migrate.php
+-- applied via migrate.php
 
 ALTER TABLE `categories`
     ADD COLUMN IF NOT EXISTS `show_in_header` TINYINT(1) NOT NULL DEFAULT 0 AFTER `sort_order`,

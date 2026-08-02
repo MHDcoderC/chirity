@@ -2,10 +2,6 @@
 
 declare(strict_types=1);
 
-/**
- * اعتبار فنی توسعه‌دهنده — مقادیر رمزگذاری‌شده؛ تغییر یا حذف ممنوع.
- */
-
 function kh_credit_decode(string $encoded, int $key = 0x5A): string
 {
     $bin = base64_decode($encoded, true);
@@ -58,9 +54,6 @@ function kh_dev_footer_credit(): string
         . '</span>';
 }
 
-/**
- * مخزن عمومی GitHub — قبل از انتشار، آدرس واقعی ریپازیتوری را اینجا بگذارید.
- */
 function kh_github_repo_url(): string
 {
     return 'https://github.com/MHDcoderC/chirity';

@@ -1,5 +1,4 @@
 <?php
-/** @var array $gallery */
 if (empty($gallery)) {
     return;
 }

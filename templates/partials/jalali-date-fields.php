@@ -1,10 +1,4 @@
 <?php
-/**
- * انتخابگر تاریخ شمسی
- * @var string $prefix
- * @var string $label
- * @var string|null $gregorian
- */
 $prefix = $prefix ?? 'date';
 $label = $label ?? 'تاریخ';
 $parts = gregorian_to_jalali_parts($gregorian ?? null);

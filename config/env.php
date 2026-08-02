@@ -2,10 +2,6 @@
 
 declare(strict_types=1);
 
-/**
- * محیط اجرا — لوکال (XAMPP) و هاست cPanel
- */
-
 function kh_local_app_config(): array
 {
     static $cfg = null;

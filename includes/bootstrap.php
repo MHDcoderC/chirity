@@ -1,5 +1,4 @@
 <?php
-/** هسته بارگذاری */
 
 declare(strict_types=1);
 
@@ -20,7 +19,6 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-// بارگذاری مدل‌ها
 require_once dirname(__DIR__) . '/models/User.php';
 require_once dirname(__DIR__) . '/models/Category.php';
 require_once dirname(__DIR__) . '/models/Post.php';

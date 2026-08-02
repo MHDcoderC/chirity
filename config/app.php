@@ -1,7 +1,4 @@
 <?php
-/**
- * تنظیمات کلی سامانه
- */
 
 declare(strict_types=1);
 
@@ -26,17 +23,14 @@ define('POSTS_PER_PAGE', 12);
 define('MAX_UPLOAD_SIZE', 2 * 1024 * 1024);
 define('ALLOWED_IMAGE_TYPES', ['image/jpeg', 'image/png', 'image/webp', 'image/gif']);
 
-/** محدودیت متن (کاراکتر) */
 define('TITLE_MAX_LENGTH', 120);
 define('EXCERPT_MAX_LENGTH', 200);
 define('EXCERPT_SLIDER_LENGTH', 90);
 
-/** ابعاد استاندارد تصویر شاخص — ۱۶:۹ */
 define('FEATURED_IMAGE_WIDTH', 1200);
 define('FEATURED_IMAGE_HEIGHT', 675);
 define('FEATURED_IMAGE_QUALITY', 85);
 
-/** بنر فراخوان گروه جهادی — تمام‌عرض */
 define('JEHADI_UPLOAD_DIR', APP_ROOT . '/uploads/jehadi');
 define('JEHADI_UPLOAD_URL', APP_URL . '/uploads/jehadi');
 define('JEHADI_BANNER_WIDTH', 1920);

@@ -1,5 +1,4 @@
 <?php
-/** @var array $jehadiCall */
 if (empty($jehadiCall) || ($jehadiCall['status'] ?? '') !== 'active') {
     return;
 }

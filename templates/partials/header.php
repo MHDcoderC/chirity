@@ -1,5 +1,4 @@
 <?php
-/** @var array $navCategories */
 $navCategories = $navCategories ?? Category::forHeader();
 $allCategories = Category::all();
 $currentSlug = $_GET['slug'] ?? '';

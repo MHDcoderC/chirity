@@ -1,6 +1,4 @@
 <?php
-/** @var string $pageTitle */
-/** @var string $pageContent */
 $pageTitle = $pageTitle ?? 'پنل مدیریت';
 ?>
 <!DOCTYPE html>

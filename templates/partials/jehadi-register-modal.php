@@ -1,5 +1,4 @@
 <?php
-/** @var array $call */
 $jalaliYears = jalali_year_options(1320);
 $jalaliMonths = jalali_month_names();
 ?>

@@ -2,10 +2,6 @@
 
 declare(strict_types=1);
 
-/**
- * اعمال تغییرات دیتابیس روی نصب‌های قبلی
- */
-
 function db_version(): int
 {
     try {

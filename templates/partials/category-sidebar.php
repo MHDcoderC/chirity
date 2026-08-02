@@ -1,7 +1,4 @@
 <?php
-/** @var array $allCategories */
-/** @var string|null $activeSlug */
-/** @var int|null $activeId */
 $allCategories = $allCategories ?? Category::all();
 $activeSlug = $activeSlug ?? ($_GET['slug'] ?? '');
 $currentScript = basename($_SERVER['SCRIPT_NAME']);

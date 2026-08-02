@@ -44,9 +44,6 @@ function upload_image(array $file): ?string
     return $name;
 }
 
-/**
- * برش و تغییر اندازه تصویر به نسبت ثابت (cover) برای یکنواختی اسلایدر و کارت‌ها
- */
 function image_resize_cover(string $path, int $width, int $height, int $quality = 85): bool
 {
     if (!is_file($path) || !extension_loaded('gd')) {

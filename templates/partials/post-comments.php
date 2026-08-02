@@ -1,6 +1,4 @@
 <?php
-/** @var array $post */
-/** @var array $comments */
 $allow = !empty($post['allow_comments']);
 ?>
 <section id="comments" class="post-comments-section mt-5">

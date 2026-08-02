@@ -83,7 +83,6 @@ if (isset($_SESSION[$key]) && time() - $_SESSION[$key] < 30) {
     exit;
 }
 
-// ظرفیت مجدد قبل از insert
 $call = JehadiCall::find((int) $call['id']);
 if (!$call || JehadiCall::isFull($call)) {
     echo json_encode([

@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-/** تبدیل میلادی به شمسی */
 function gregorian_to_jalali(int $gy, int $gm, int $gd): array
 {
     $gDaysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
@@ -68,10 +67,6 @@ function jalali_weekday_name(int $w): string
     return $days[$w] ?? '';
 }
 
-/**
- * @param string|null $datetime تاریخ میلادی (Y-m-d یا datetime)
- * @param string $format short|long|full|time
- */
 function jalali_date(?string $datetime, string $format = 'short'): string
 {
     if (!$datetime) {
@@ -107,7 +102,6 @@ function jalali_today(string $format = 'full'): string
     return jalali_date(date('Y-m-d'), $format);
 }
 
-/** تبدیل تاریخ شمسی به میلادی — خروجی Y-m-d */
 function jalali_to_gregorian(int $jy, int $jm, int $jd): array
 {
     $jy += 1595;
@@ -184,7 +178,6 @@ function jalali_month_names(): array
     ];
 }
 
-/** تبدیل تاریخ میلادی Y-m-d به اجزای شمسی */
 function gregorian_to_jalali_parts(?string $date): array
 {
     if (!$date || !preg_match('/^(\d{4})-(\d{2})-(\d{2})/', $date, $m)) {
@@ -194,7 +187,6 @@ function gregorian_to_jalali_parts(?string $date): array
     return ['year' => (string) $jy, 'month' => (string) $jm, 'day' => (string) $jd];
 }
 
-/** خواندن سه فیلد سال/ماه/روز شمسی از POST */
 function parse_jalali_post_fields(string $prefix): ?string
 {
     $y = trim($_POST[$prefix . '_year'] ?? '');

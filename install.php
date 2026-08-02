@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-/** نصب اولیه */
-
 require_once __DIR__ . '/config/env.php';
 require_once __DIR__ . '/config/credits.php';
 
@@ -210,23 +208,12 @@ $h = static fn (string $s): string => htmlspecialchars($s, ENT_QUOTES, 'UTF-8');
 
                     <div class="install-terms-body">
                         <p>
-                            این سامانه توسط <strong><?= $h(kh_dev_name()) ?></strong> برای
-                            <strong>خیریه حضرت زینب شهرستان دهدشت</strong> طراحی شده است.
+                            توسعه‌دهنده: <strong><?= $h(kh_dev_name()) ?></strong>
+                            — سایت: <a href="<?= $h(kh_dev_url()) ?>" class="install-terms-link" target="_blank" rel="noopener noreferrer"><?= $h(kh_dev_url()) ?></a>
                         </p>
-                        <p><strong>استفاده در همین خیریه:</strong> بدون نیاز به مجوز جداگانه.</p>
                         <p>
-                            <strong>استفاده برای خیریه، سازمان یا پروژه دیگر:</strong>
-                            هر کسی می‌تواند استفاده کند؛ شرط آن
-                            <strong>ستاره‌دادن (Star)</strong> به مخزن GitHub این پروژه با حساب شخصی خودتان است.
-                        </p>
-                        <p class="install-terms-github mb-0">
-                            <i class="bi bi-github"></i>
-                            مخزن پروژه:
+                            برای نصب روی سایت دیگر، مخزن GitHub را Star کنید:
                             <a href="<?= $h(kh_github_repo_url()) ?>" class="install-terms-link" target="_blank" rel="noopener noreferrer"><?= $h(kh_github_repo_url()) ?></a>
-                        </p>
-                        <p class="install-terms-contact mb-0">
-                            توسعه‌دهنده:
-                            <a href="<?= $h(kh_dev_url()) ?>" class="install-terms-link" target="_blank" rel="noopener noreferrer"><?= $h(kh_dev_name()) ?></a>
                         </p>
                     </div>
 
@@ -239,7 +226,7 @@ $h = static fn (string $s): string => htmlspecialchars($s, ENT_QUOTES, 'UTF-8');
                         <label class="install-terms-agree" for="termsRead">
                             <input type="checkbox" name="terms_read" value="1" id="termsRead" required>
                             <span class="install-terms-agree-box" aria-hidden="true"></span>
-                            <span class="install-terms-agree-text">شرایط را خواندم و می‌پذیرم؛ در صورت استفاده خارج از خیریه اصلی، مخزن GitHub را Star می‌کنم.</span>
+                            <span class="install-terms-agree-text">شرایط را خواندم و می‌پذیرم.</span>
                         </label>
                         <button type="submit" class="btn btn-install-terms w-100">ادامه نصب</button>
                     </form>

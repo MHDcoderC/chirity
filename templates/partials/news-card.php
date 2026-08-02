@@ -1,5 +1,4 @@
 <?php
-/** @var array $post */
 ?>
 <article class="news-card">
     <a href="<?= url('news/' . $post['slug']) ?>">

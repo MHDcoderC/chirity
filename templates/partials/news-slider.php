@@ -1,8 +1,4 @@
 <?php
-/**
- * اسلایدر اخبار ویژه — صفحه اصلی
- * @var array $sliderPosts
- */
 if (empty($sliderPosts)) {
     return;
 }

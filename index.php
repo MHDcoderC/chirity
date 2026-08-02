@@ -1,5 +1,4 @@
 <?php
-/** صفحه اصلی */
 
 declare(strict_types=1);
 

@@ -1,7 +1,4 @@
 <?php
-/**
- * اتصال PDO — پس از نصب، مقادیر در config/local.php ذخیره می‌شود.
- */
 
 declare(strict_types=1);
 

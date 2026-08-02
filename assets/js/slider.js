@@ -1,6 +1,3 @@
-/**
- * همگام‌سازی تامب‌های اسلایدر و نوار پیشرفت
- */
 (function () {
     var carousel = document.getElementById('newsHeroCarousel');
     if (!carousel || typeof bootstrap === 'undefined') {

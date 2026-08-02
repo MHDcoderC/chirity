@@ -1,6 +1,4 @@
 <?php
-/** @var string $pageTitle */
-/** @var string $extraCss */
 $pageTitle = $pageTitle ?? site_name();
 $extraCss = $extraCss ?? '';
 ?>
